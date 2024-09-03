@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d3e40;
+    color: white;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3e40;
+    padding: 10px 20px;
+}
+
+.navbar span {
+    font: bold;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1353d2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #224a98;
+}
+
+
+.hero {
+    background-image: url('background.jpg');
+    /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 100px 20px;
+    display: flex;
+    background-attachment: fixed;
+    gap: 410px;
+}
+
+.hero1 {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: left;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+    /* Ensures the pseudo-element doesn't overflow the container */
+    border-radius: 10px;
+    border: 2px solid black;
+    max-height: 478px;
+    /* Optional: Adds rounded corners */
+}
+
+.hero1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    /* Apply the frosted glass blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari support */
+    z-index: 1;
+    /* Ensure the overlay is above the background but below the content */
+    border-radius: inherit;
+    /* Inherit border-radius from .hero1 */
+}
+
+.hero1>* {
+    position: relative;
+    z-index: 2;
+    /* Ensure content is above the frosted glass overlay */
+}
+
+.hero1 h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.hero p {
+    max-width: 500px;
+
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.book-now {
+    padding: 15px 30px;
+    background-color: #1353d2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.book-now:hover {
+    background-color: #224a98;
+}
+
+
+
+.result-card {
+    background-color: white;
+    border: 3px black;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.result-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.result-card h3 {
+    margin: 20px 20px 20px 20px;
+    font-size: 22px;
+}
+
+.result-card h2 {
+    margin: 20px 20px 20px 20px;
+    font-size: 22px;
+}
+
+
+.result-card p {
+    margin: 20px 20px 20px 20px;
+    font-size: 16px;
+}
+
+.visit-button {
+    display: block;
+    margin: 0 20px 20px 20px;
+    padding: 10px 20px;
+    background-color: #1353d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.visit-button:hover {
+    background-color: #224a98;
+}
